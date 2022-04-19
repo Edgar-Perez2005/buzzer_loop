@@ -1,0 +1,24 @@
+int buzzerPin = 5;
+int i = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+do{
+  i++;
+  tone(buzzerPin, 250, 200);
+  noTone(buzzerPin);
+  delay(500);
+}
+while(i<2);
+{
+  tone(buzzerPin, 250, 200);
+  noTone(buzzerPin);
+  delay(500);
+}
+delay(1000);
+}
